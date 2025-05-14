@@ -24,5 +24,5 @@ This project demonstrates how to segment and detect objects in an image using K-
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/kmeans-object-detection.git
-   cd kmeans-object-detection
+   git clone [https://github.com/yourusername/kmeans-object-detection.git](https://github.com/Fakruddin002/Image-Segmentation-and-Object-Detection.git)
+   cd Image-Segmentation-and-Object-Detection.git
