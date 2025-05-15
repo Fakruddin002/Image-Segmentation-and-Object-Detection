@@ -41,5 +41,5 @@ This project is a Streamlit-based web application that allows users to upload an
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/kmeans-object-detection.git
-cd kmeans-object-detection
+git clone https://github.com/Fakruddin002/Image-Segmentation-and-Object-Detection.git
+cd Image-Segmentation-and-Object-Detection
