@@ -1,28 +1,45 @@
-# 🖼️ Image Segmentation and Object Detection using K-Means Clustering
+# ✨ Image Segmentation & Object Detection using K-Means and Streamlit
 
-This project demonstrates how to segment and detect objects in an image using K-Means clustering and basic image processing techniques. It is built as a web application using Streamlit for easy user interaction.
+This project is a Streamlit-based web application that allows users to upload an image and apply K-Means clustering for segmentation. It detects and highlights the most prominent object based on color thresholding in the HSV color space. The app is fully interactive with controls for adjusting clusters and HSV ranges.
 
 ## 🚀 Features
 
-- Upload an image from your local system
-- Perform image segmentation using K-Means (k=4)
-- Select a specific cluster to highlight
-- Mask and convert image to HSV for color filtering
-- Detect and draw a bounding box around the largest object
-- View all processed images (Original, Segmented, Masked, HSV, Thresholded, Detected)
-- Download the final detected image
+- Upload any JPG/PNG image from your local system
+- Interactive sidebar to control:
+  - K value (number of clusters)
+  - Which cluster to highlight
+  - HSV color thresholds
+- View image processing stages in organized tabs:
+  - Segmented Image
+  - Mask Highlight
+  - HSV Threshold
+  - Detected Objects
+- Automatic bounding box on the largest detected object
+- Stylish UI with custom CSS for better user experience
+- Download processed output image
 
-## 🧰 Tech Stack
+## 🧠 How It Works
+
+1. Image is uploaded and resized for performance.
+2. K-Means clustering is applied to segment the image.
+3. The user-selected cluster is highlighted using color masking.
+4. Masked image is converted to HSV for better color filtering.
+5. HSV thresholds are applied to isolate the object.
+6. The largest contour is detected and bounded with a box.
+7. Results are shown with clear visuals in four tabs.
+
+## 🛠 Tech Stack
 
 - Python 3.x
-- OpenCV
-- NumPy
 - Streamlit
+- OpenCV (cv2)
+- NumPy
 - Pillow (PIL)
 
 ## 📦 Installation
 
-1. Clone this repository:
-   ```bash
-   git clone [https://github.com/yourusername/kmeans-object-detection.git](https://github.com/Fakruddin002/Image-Segmentation-and-Object-Detection.git)
-   cd Image-Segmentation-and-Object-Detection.git
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/kmeans-object-detection.git
+cd kmeans-object-detection
